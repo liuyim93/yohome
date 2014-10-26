@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>未知错误-</title>
+    <style type="text/css">
+        table {
+            position:absolute;
+            left:40%;
+            top:40%;
+        }
+        p {
+            height:22px;
+            line-height:22px;
+            font-size:14px;
+        }
+        span {
+            color:red;
+            font-size:14px;
+        }
+    </style>    
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="/Images/404.jpg" width="135" height="105" alt="404" /></td>
+                <td><p>对不起您访问的页面不存在或已删除。</p>
+                    <p><span id="sec">5</span>&nbsp;秒后自动返回首页！</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">                
+        function run() {
+            var num = document.getElementById("sec").innerHTML;
+            var sec = document.getElementById("sec");
+            num = num - 1;
+            sec.innerHTML = num;
+            if (num==1) {
+                window.location.href = "/Default.aspx";
+            }
+            if (num <= 0) {
+                sec.innerHTML = 0; 
+			    clearInterval(int);
+            }
+        }
+        window.onload = function () {            
+            var int = setInterval("run()", 1000);
+        };                
+    </script>
+</body>
+</html>

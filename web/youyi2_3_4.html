@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>佑壹空间设计-佑壹案例-保利江上明珠</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+        <link rel="stylesheet" href="styles/colors.css" type="text/css" />
+        <link rel="stylesheet" href="styles/tweets_slider.css" type="text/css" />
+        <link rel="stylesheet" href="fabrtastic/farbtastic.css" type="text/css" />
+        <link rel="stylesheet" href="styles/galleriffic-2.css" type="text/css" />
+        <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="styles/max1024.css" type="text/css" />
+        <!--[if lt IE 9]><style>#sidebar-button {float: none;}</style><![endif]-->
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+        <script type="text/javascript" src="js/jquery.simplemodal.1.4.1.min.js"></script>
+        <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+        <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+        <!-- We only want the thunbnails to display when javascript is disabled -->
+        <script type="text/javascript">
+            document.write('<style>.noscript { display: none; }</style>');
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                // We only want these styles applied when javascript is enabled
+                $('div.navigation').css({'width' : '400px', 'float' : 'left'});
+                $('div.content').css('display', 'block');
+
+                // Initially set opacity on thumbs and add
+                // additional styling for hover effect on thumbs
+                var onMouseOutOpacity = 0.67;
+                $('#thumbs ul.thumbs li').opacityrollover({
+                    mouseOutOpacity:   onMouseOutOpacity,
+                    mouseOverOpacity:  1.0,
+                    fadeSpeed:         'fast',
+                    exemptionSelector: '.gal_selected'
+                });
+				
+                // Initialize Advanced Galleriffic Gallery
+                var gallery = $('#thumbs').galleriffic({
+                    delay:                     2500,
+                    numThumbs:                 16,
+                    preloadAhead:              10,
+                    enableTopPager:            false,
+                    enableBottomPager:         true,
+                    maxPagesToShow:            7,
+                    imageContainerSel:         '#slideshow',
+                    controlsContainerSel:      '#controls',
+                    captionContainerSel:       '#caption',
+                    loadingContainerSel:       '#loading',
+                    renderSSControls:          false,
+                    renderNavControls:         true,
+                    playLinkText:              'Play Slideshow',
+                    pauseLinkText:             'Pause Slideshow',
+                    prevLinkText:              '',
+                    nextLinkText:              '',
+                    nextPageLinkText:          'Next &rsaquo;',
+                    prevPageLinkText:          '&lsaquo; Prev',
+                    enableHistory:             false,
+                    autoStart:                 false,
+                    syncTransitions:           true,
+                    defaultTransitionDuration: 900,
+                    onSlideChange:             function(prevIndex, nextIndex) {
+                        // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                        this.find('ul.thumbs').children()
+                        .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                        .eq(nextIndex).fadeTo('fast', 1.0);
+                    },
+                    onPageTransitionOut:       function(callback) {
+                        this.fadeTo('fast', 0.0, callback);
+                    },
+                    onPageTransitionIn:        function() {
+                        this.fadeTo('fast', 1.0);
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="fabrtastic/farbtastic.js"></script>
+        <script type="text/javascript" src="js/klassik.js"></script>
+        <script type="text/javascript" src="js/theme-change.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+    <body>
+        <div id="vv_top_dark">
+            <div id="vv_top_dark_inside" class="vv_separator_bottom">      	
+                <div id="vv_top_light">
+                    <div id="vv_top_light_inside" class="vv_separator_bottom"></div>
+                </div>
+                <div class="vv_shadow_top"></div>
+                <div id="vv_wrapper_top">
+                    <div id="vv_logo">
+                        <a href="index.html">
+                            <img alt="Klassik" src="img/logo.png" />
+                        </a>
+                    </div>
+                    <div id="vv_menu_wrapper">
+                         <ul class="vv_menu">
+                            <li><a id="vv_menu_active" href="index.html">关于佑壹</a></li>                                
+
+                            <li><a href="youyi2_1.html">佑壹工艺</a>
+                               <ul>
+                                    <li><a href="youyi2_1.html">工艺介绍</a></li>
+                                    <li><a href="youyi2_2.html">佑壹案例</a></li>
+                                    <li><a href="youyi2_3.html">佑壹知识</a></li>
+                                    
+                                </ul>
+                            
+                            </li> 
+
+                            <li><a href="youyi3.html">佑壹团队</a> <ul>
+                           
+                                    <li><a href="youyi3.html">佑壹团队</a></li>
+                                    <li><a href="youyi3_1.html">在建工程</a></li>
+                                    
+                                </ul>
+                             
+                                    </li>
+                            <li><a href="youyi4.html">招贤纳士</a></li>
+                              <li><a href="youyi5.html">佑壹博客</a> </li>
+                            <li><a href="#" class="vv_contact">联系我们</a></li>
+
+
+                           
+                        </ul>             
+                    </div>
+                </div>	
+                <div class="vv_page_name">
+                    <p><a href="index.html">关于佑壹</a> &nbsp; > &nbsp; <a href="youyi2_1.html">佑壹工艺</a>&nbsp; > &nbsp;<a href="youyi2_2.html">佑壹知识</a>&nbsp; > &nbsp;<span>软装书房</span></p>
+                </div>			
+            </div>             
+        </div>
+        <div class="vv_shadow_top"></div>
+
+        <div id="vv_main_content">
+            <div class="vv_blog_article">				
+                <div id="gallery" class="content">
+                    <div id="caption" class="caption-container"></div>
+                    <div class="slideshow-container">
+                        <div id="loading" class="loader"></div>
+                        <div id="slideshow" class="slideshow"></div>                        
+                    </div>					
+                    <div id="controls" class="controls"></div>                    
+                </div>
+                <div id="thumbs" class="navigation">
+                    <ul class="thumbs noscript">
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/1.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb1.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/2.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb2.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/3.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb3.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/4.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb4.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/5.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb5.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/6.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb6.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/7.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb7.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/8.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb8.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/9.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb9.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/10.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb10.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/11.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb11.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/12.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb12.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/13.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb13.jpg" alt="Title #0" />
+                            </a>
+
+                        </li><li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/14.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb14.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/15.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb15.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/16.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb16.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/17.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb17.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/18.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb18.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/19.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb19.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a class="thumb" name="leaf" href="img/youyi2_3_4/20.jpg" title="Title #0">
+                                <img src="img/youyi2_3_4/thumb20.jpg" alt="Title #0" />
+                            </a>
+
+                        </li>
+
+                       
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+            </div>        	           
+        </div>
+
+        <div id="vv_circle_min_box"><div class="vv_circle_min"><a href="#vv_wrapper_top"></a></div></div>
+        <div class="vv_shadow_bottom"></div>
+
+        <div id="vv_bottom_light">
+            <div id="vv_bottom_light_inside" class="vv_separator_top">
+                <div id="vv_twitter_box">
+                    <div id="vv_twitter_bird"></div>
+                    <div id="vv_tweets_slider">
+                        <div id="slides">
+                            <div class="slides_container">
+                                <div class="slide">
+                                    <div class="info">
+                                         <p>近年来室内设计，像杭州清风室内设计培训机构等高端设计培训机构的不断出现。</p>		
+                                        <div class="cleaner"></div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="info">
+                                        <p>室内设计师已经成为一个备受关室内设计注的职业。</p>		
+                                        <div class="cleaner"></div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="info">
+                                       <p>装饰装修行业的迅猛发展，社会对于专业设计人员和专业技术人员的需求量也在逐年增加。</p>					
+                                        <div class="cleaner"></div>
+                                    </div>
+                                </div>												
+                            </div>
+                            <a class="prev" href="#"></a>
+                            <a class="next" href="#"></a>
+                            <div class="cleaner"></div>
+                        </div>
+                    </div>
+                    <div class="cleaner"></div>
+                </div>
+                <div class="vv_shadow_bottom"></div>
+                <div id="vv_bottom_dark">
+                    <div id="vv_bottom_dark_inside" class="vv_separator_top">
+                        <div id="vv_footer">
+                            <div class="one_third vv_posts">
+                                <h3>佑壹小知识</h3>
+                                <ul>
+                                    <li>
+                                        <div class="vv_img_wrapper vv_left vv_img_hover2">
+                                            <a href="#"><img alt="promo1" src="img/post1.jpg" /></a>
+                                        </div>
+                                        <div class="vv_post_info vv_left">
+                                            <p>"室内设计是根据建筑物的使用性质、所处环境和相应标准，运用物质技术手段。"</p>    </div>                                        
+                                        <div class="cleaner"></div>
+                                    </li>
+                                    <li>
+                                        <div class="vv_img_wrapper vv_left vv_img_hover2">
+                                            <a href="#"><img alt="promo1" src="img/post2.jpg" /></a>
+                                        </div>
+                                        <div class="vv_post_info vv_left">
+                                           <p>"室内设计是根据建筑物的使用性质、所处环境和相应标准，运用物质技术手段和建筑设计原理。"</p>
+                                        </div>                                        
+                                        <div class="cleaner"></div>
+                                    </li>
+                                    <li>
+                                        <div class="vv_img_wrapper vv_left vv_img_hover2">
+                                            <a href="#"><img alt="promo1" src="img/post3.jpg" /></a>
+                                        </div>
+                                        <div class="vv_post_info vv_left">
+                                           <p>"室内设计是根据建筑物的使用性质、所处环境和相应标准，运用物质技术手段和建筑设计原理。"</p> </div>                                        
+                                        <div class="cleaner"></div>
+                                    </li>	
+                                </ul>
+                            </div>
+                            <div class="one_third">
+                                <h3>佑壹小创意</h3>
+                                <div id="vv_testimonial_slider">
+                                    <div id="slides2">
+                                        <div class="slides_container">
+                                            <div class="slide">
+                                                <div class="info"> 
+                                                    <img src="img/quotes.png" alt="quotes" />
+                                                   <p>"室内设计是根据建筑物的使用性质、所处环境和相应标准，运用物质技术手段和建筑设计原理，创造功能合理、舒适优美、满足人们物质和精神生活需要的室内环境。这一空间环境既具有使用价值，满足相应的功能要求，同时也反映了历史文脉、建筑风格、环境气氛等精神因素。"</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="info"> 
+                                                    <img src="img/quotes.png" alt="quotes" />      					
+                                                    <p>"室内设计是根据建筑物的使用性质、所处环境和相应标准，运用物质技术手段和建筑设计原理，创造功能合理、舒适优美、满足人们物质和精神生活需要的室内环境。这一空间环境既具有使用价值，满足相应的功能要求，同时也反映了历史文脉、建筑风格、环境气氛等精神因素。明确地把"创造满足人们物质和精神生活需要的室内环境"作为室内设计的目的。"</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="info">
+                                                    <img src="img/quotes.png" alt="quotes" />
+                                                  <p>" 重庆佑壹室内设计有限公司"</p>
+                                                </div>
+                                            </div>							
+                                        </div>
+                                        <a class="prev vv_left" href="#"></a>
+                                        <a class="next vv_left" href="#"></a>                          
+                                        <div class="cleaner"></div>
+                                    </div>                                
+                                </div>
+                                <div class="cleaner"></div>
+                            </div>
+                            <div class="one_third last vv_about_us">
+                                <h3>佑壹留言板</h3>
+                                <div class="vv_img_wrapper vv_left">
+                                    <img alt="about us" src="img/about_us.jpg" />
+                                </div>
+                                 <p>"室内设计是根据建筑物的使用性质、所处环境和相应标准，运用物质技术手段和建筑设计原理，创造功能合理、舒适优美、满足人们物质和精神生活需要的室内环境。这一空间环境既具有使用价值，满足相应的功能要求，同时也反映了历史文脉、建筑风格、环境气氛等精神因素。明确地把"创造满足人们物质和精神生活需要的室内环境"作为室内设计的目的。" </p>
+                                <div class="cleaner"></div>
+                                <div class="vv_social_icons">
+                                    <div class="vv_twitter_button bubbleInfo">
+                                        <a href="http://weibo.com" class="trigger"> </a>
+                                        <div class="popup">
+                                            新浪
+                                        </div>
+                                    </div>
+                                    <div class="vv_flickr_button bubbleInfo">
+                                        <a href="https://mp.weixin.qq.com/" class="trigger"> </a>
+                                        <div class="popup">
+                                            微信
+                                        </div>
+                                    </div>
+                                    <div class="vv_facebook_button bubbleInfo">
+                                        <a href="http://w.qq.com/" class="trigger"> </a>
+                                        <div class="popup">
+                                            腾讯QQ
+                                        </div>
+                                    </div>
+                                    <div class="vv_google_button bubbleInfo">
+                                        <a href="https://passport.baidu.com" class="trigger"> </a>
+                                        <div class="popup">
+                                            百度
+                                        </div>
+                                    </div>
+                                    <div class="vv_vimeo_button bubbleInfo last">
+                                        <a href="http://t.qq.com" class="trigger"> </a>
+                                        <div class="popup">
+                                            腾讯
+                                        </div>
+                                    </div>
+                                    <div class="cleaner"></div>
+                                </div>						
+                            </div>
+                            <div class="cleaner"></div>
+                        </div>
+                        <div id="vv_end" class="vv_separator_top">
+                           <div id="vv_end_inside">
+                              公司地址：重庆市渝北区新南路168号龙湖MOCO A馆2栋2503
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：023—67879694                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div id="vv_hidden_contact">
+            <div class="vv_hidden_top"></div>
+            <div class="vv_hidden_middle">
+                <div class="vv_hidden_content">
+                      <h3>如果你有什么问题可以联系我！</h3>
+                    <form id="vv_contact_form" />						
+                        <input type="text" name="form_name" id="form_name" />
+                        <label for="form_name">姓名</label>
+                        <input type="text" name="email" id="email" />
+                        <label for="email">E-mail</label>
+                        <textarea></textarea>
+                        <input class="vv_send_circle" type="submit" value="" />
+                    </form>
+                </div>
+            </div>
+            <div class="vv_hidden_bottom"></div>
+        </div>
+        <div id="vv_hidden_search">
+            <div class="vv_hidden_top"></div>
+            <div class="vv_hidden_middle">
+                <div class="vv_hidden_content">
+                    <h3>你要找的东西？</h3>
+                    <form id="vv_search_form" />						
+                        <input type="text" name="search" id="search" />						
+                        <input class="vv_send_circle" type="submit" value="" />
+                    </form>
+                </div>
+            </div>
+            <div class="vv_hidden_bottom"></div>
+        </div> 
+         
+    </body>
+</html>

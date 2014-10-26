@@ -1,0 +1,28 @@
+body {color: #6a6a6a; background-color: #fcfcfc;}
+#simplemodal-overlay {background-color:#000;}
+.vv_sidebar ul a{color: #9a9a9a;}
+.vv_circle, .vv_send_circle, #vv_search_form .vv_send_circle, .vv_highlight2, .vv_drop4{background-color: #bfbfbf;}
+.vv_page_name a, .popup, .vv_blog_date, .vv_comment_form input[type="submit"], #vv_error, #vv_error h2, .vv_highlight1, .vv_highlight2,
+.vv_drop3, .vv_drop4, .not_selected:hover h5, .selected h5, a.toggle:hover, a.togg_active, .vv_page_name p{color: #ffffff;}
+ul.vv_menu a, #vv_welcome_text p, .vv_img_info, span.vv_blog_info, .vv_comments_box h3 {color:#8a8a8a;}
+ul.vv_menu ul li a {background-color:#f0f0f0;}
+ul.vv_menu ul li a:hover, #services .panels, .not_selected, a.toggle {background-color:#fbfbfb;}
+a, #vv_menu a:hover,a#vv_menu_active, h1, h2, h3, h4, h5, h6, ul.vv_menu ul li a:hover, ul.vv_menu a:hover, ul.vv_menu .vv_menuhover,
+.vv_left_box_info h3, span#vv_construction_info, .vv_drop1, .vv_post_info a {color: #66CEDB;}
+.vv_highlight1, .vv_drop3, .selected, .not_selected:hover, a.toggle:hover, a.togg_active,
+div.gal_pagination span.current, div.gal_pagination a:hover {background-color: #66CEDB;}
+#vv_top_dark_main, #vv_top_light, #vv_bottom_light, #vv_top_dark,
+#vv_hidden_contact, #vv_hidden_search{background-color: #f9f9f9;}
+#vv_slider_wrapper, .vv_img_wrapper {background-color: #ffffff;}
+#vv_footer, #vv_footer h3{color: #5a5a5a;}
+.popup {background: #6a6a6a;}
+#vv_end_inside{color: #9a9a9a;}
+.vv_hidden_content h3{color: #80c4cc;}
+#vv_contact_form label, .vv_comment_form label {color: #a0a0a0;}
+#vv_error{background-color: #eeeeee;}
+#vv_error_info{color: #aaaaaa;}
+#vv_error_info span{color: #dddddd;}
+.vv_drop2{color: #bfbfbf;}
+.vv_side_information a, div.gal_pagination span.current, div.gal_pagination a:hover{color: #ffffff;}
+.vv_more_circle, .vv_circle_min {background-color: #E4E4E4} 
+div.gal_pagination span.current, div.gal_pagination a:hover  {border-color: #66CEDB;}

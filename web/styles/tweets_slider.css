@@ -1,0 +1,56 @@
+
+/*======arrows=====*/                                        
+.prev, .next{display: block; position: relative; z-index: 10; float: left; left: 80px;}
+a.prev, a:hover.prev, a.next, a:hover.next{height: 22px; width: 13px;margin-top: 33px;}
+a.prev{margin-right: 20px; background: url(./../img/tweet_arrow_left.png) no-repeat;}
+a.prev:hover{margin-right: 20px; background: url(./../img/tweet_arrow_left.png) no-repeat 0 -23px;}
+a.next{background: url(./../img/tweet_arrow_right.png) no-repeat;}
+a.next:hover{margin-right: 20px; background: url(./../img/tweet_arrow_right.png) no-repeat 0 -23px;}
+#vv_testimonial_slider a.prev, #vv_testimonial_slider a:hover.prev, #vv_testimonial_slider a.next, #vv_testimonial_slider a:hover.next {margin-top: 20px; left: 0;}
+
+#vv_tweets_slider #slides {
+	z-index:100;	
+	width: 917px;
+	height: 100%;
+	float: right;
+	
+}
+
+#vv_tweets_slider .slides_container {height:40px; overflow:hidden; position:relative; width: 785px;background: rgba(255, 255, 255, 0.6); float: left; margin: 24px 0 0 5px; border-radius: 20px;}
+
+#vv_tweets_slider .info{
+float: left;
+width: 100%;
+height: 20px;
+margin: 0;
+font-family: Cambria, Palatino, Times New Roman, serif;
+font-size: 125%;
+font-style: italic;
+color: #8a8a8a;
+padding: 11px 35px;
+}
+
+#vv_tweets_slider .info p, #vv_tweets_slider .date, #vv_tweets_slider .nick{float: left; margin: 0 10px 0 0;}
+
+
+#vv_testimonial_slider #slides2 {
+	z-index:100;	
+	width: 100%;	
+	margin: 0;
+}
+#vv_testimonial_slider img{height: 28px; width: 36px; float: left; margin:5px 15px 0 5px;}
+#vv_testimonial_slider .slides_container {overflow:hidden; position:relative;}
+
+#vv_testimonial_slider .info{
+float: left;
+width: 306px;
+height: 100%;
+margin: 0;
+}
+
+#vv_testimonial_slider p{
+margin: 0;
+font-size: 95%;
+}
+
+.pagination {display: none;}

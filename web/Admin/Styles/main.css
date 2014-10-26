@@ -1,0 +1,323 @@
+﻿body {
+    font-size:12px;font-family:'宋体';
+}
+* {
+    margin:0px;padding:0px;
+}
+a {
+    color:#2266A7;
+    text-decoration:none;
+}
+    a:hover {
+        text-decoration:underline;
+    }
+ul {
+    list-style:none;
+}
+img
+{
+    border:none;
+}
+.login {
+    background:url("../Images/loginbg.jpg") no-repeat #CADFF0;
+}
+.login_btn
+{
+    width:120px;
+    height:30px;
+    background:url("../Images/login.png") no-repeat center top;
+    line-height:24px;
+    color:#fff;
+    cursor:pointer;
+    border:none;
+}
+.login_div {
+    width:487px;
+    height:260px;
+    position:absolute;
+    top:35%;
+    left:35%;
+    background:url("../Images/login_bg.gif") no-repeat;
+    padding:50px 20px 0 0;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+    .login_div p
+    {
+        height:24px;
+        line-height:24px;
+        margin-left:210px;
+        margin-bottom:20px;
+    }
+.login_btn1
+{
+    padding-left:210px;
+    width:200px;
+    height:35px;
+    padding-bottom:15px;
+}
+        .login_div p label
+        {
+            width:60px;
+            float:left;
+            line-height:24px;
+            height:24px;
+        }
+        .login_txt
+        {
+            width:180px;
+            height:24px;
+            padding:1px 3px;
+            border:1px solid #919191;
+            background:#fff;
+            line-height:24px;  
+            vertical-align:middle;                       
+        }
+#codeimage
+{
+    cursor:pointer;
+}
+.copyright
+{
+    text-align:center;
+    font-size:12px;
+}
+
+/*Main_Top.aspx*/
+.top {
+    background-color:#EEF5FB;
+    height:85px;    
+}
+.top_logo {
+   width:210px;
+   height:64px;
+   /*background:url("../Images/dwzx_logo2.png") no-repeat;*/
+   background-size:210px 64px;
+   -moz-background-size:210px 64px;
+   -o-background-size:210px 64px;
+   position:absolute;
+   left:5px;
+   top:7px;
+}
+.top_right {
+   margin-left:230px;
+}
+.top_right_t {
+    height:35px; 
+    padding-top:15px;   
+    background:#E6F3FC;
+}
+    .top_right_t span {
+        display:block;
+        float:left;
+    }
+.top_right_t span a {
+    background:url(../Images/top_home.jpg) no-repeat;
+    display:block;
+    width:94px;
+    height:35px;
+}
+    .top_right_t ul {
+        float:left;        
+        margin-top:10px;
+        height:25px;
+    }
+        .top_right_t ul li {
+            float:left;
+            height:25px;
+            line-height:25px;
+            padding:0 8px;
+        }
+            .top_right_t ul li a {
+                color:#4F879E;
+                font-size:14px;
+                font-weight:bold;
+            }
+.top_right_m {
+    height:5px;
+    background:url("../Images/top_line.jpg") repeat-x scroll;
+}
+.top_right_b {
+    height:25px;
+    line-height:25px;
+    background:#EAF4F8;
+    padding-left:3px;
+    margin:3px 0;
+}
+    .top_right_b b {
+        color:#0198CD;
+    }
+    .top_right_b span {
+        color:#f00;
+    }
+
+/*Main_Left.aspx*/
+.left {
+    background:#DDEFF9;
+    width:200px;    
+    height:100%;
+    overflow:hidden;
+    border-right:1px solid #B4CFD8;
+    border-top:1px solid #B4CFD8;
+}
+.left_title {
+    width:95%;
+    height:25px;
+    line-height:25px;
+    background:url("../Images/left_title_dot.gif") no-repeat 10px center #DDEFF9;
+    padding-left:20px;
+    font-weight:bold;
+    color:#2266A7;
+    font-size:13px;
+}
+.left dl {
+    background-color:#fff;
+    width:94%;
+    margin-left:5px;
+}
+    .left dl dt {
+        height:22px;
+        line-height:22px;
+        width:90%;
+        margin:0 auto;
+        font-weight:bold;
+        color:#666;
+        background:url("../Images/left_dt_dot.gif") no-repeat 17px center;
+        padding-left:27px;
+    }
+    .left dl dt a{
+        color:#666;
+        font-weight:bold;
+    }
+        .left dl dt a:hover {
+            text-decoration:underline;
+        }
+    .left dl dd {
+        height:22px;
+        line-height:22px;
+        margin:0px auto;
+        background:url("../Images/left_dt_dot.gif") no-repeat 17px center;
+        padding-left:37px;
+        color:#000;
+    }
+        .left dl dd a {
+            font-size:12px;
+            color:#666;
+        }
+
+/*SiteInfo.aspx*/
+.right_title {
+    color:#2266A7;
+    font-size:13px;
+    height:30px;
+    line-height:30px;
+    border-bottom:4px solid #DDEFF9;
+    font-weight:bold;
+    padding-left:20px;
+}
+    .right_main b {
+        color:#000;
+        margin-left:50px;
+        height:25px;
+        line-height:25px;
+    }
+.right_up {
+    height:4px;
+}
+.bg_color {
+    background-color:#E8F1F6;
+}
+.height80 {
+    height:80px;
+}
+.right_main {
+    margin-top:5px;
+    border-bottom:#CDE0EB 1px solid;
+    width:100%;
+    /*height:25px;*/
+    overflow:hidden;
+}
+    .right_main:hover {
+        background-color:#E8F1F6;
+    }
+.right_main_txt {
+    width:115px;
+    height:25px;
+    line-height:25px;
+    text-align:right;
+    margin-right:10px;
+    float:left;
+    overflow:hidden;
+}
+.right_main_input {
+    float:left;
+    line-height:25px;
+    overflow:hidden;
+}
+.clear {
+    clear:both;
+    width:1px;
+    height:0px;
+}
+.right_main .right_main_input input[type="text"] {
+    height:18px;
+    line-height:18px;
+    border:1px solid #7F9DB9;
+    background:#fff;
+    width:300px;
+    padding:1px 3px;
+}
+.right_main_input textarea {
+    border:1px solid #7F9DB9;
+    background-color:#fff;
+    height:80px;
+    width:500px;
+}
+/*SiteInfo.aspx end*/
+
+/*分页控件*/
+.paginator { font: 12px Arial, Helvetica, sans-serif;/*padding:10px 20px 10px 0; margin: 0px; position:absolute; bottom:5px; right:37%;*/}
+.paginator a {border:solid 1px #ccc;cursor:pointer;text-decoration:none;}
+.paginator a:visited {padding: 1px 6px; border: solid 1px #ddd; background: #fff; text-decoration: none;}
+.paginator .cpb {border:1px solid #F50;font-weight:700;color:#F50;background-color:#ffeee5;}
+.paginator a:hover {border:solid 1px #f50;color:#f50;text-decoration:none;}
+.paginator a,.paginator a:visited,.paginator .cpb,.paginator a:hover 
+{float:left;height:22px;line-height:22px;min-width:10px;_width:10px;margin-right:5px;text-align:center;
+ white-space:nowrap;font-size:12px;font-family:Arial,SimSun;padding:0 3px;}
+/*分页控件 end*/
+.upload_div span{
+    color:#f00;    
+}
+
+/*message.aspx*/
+.right_search {
+    width:98%;
+    border:1px solid #CDE0EB;
+    padding:3px 10px;
+    margin:5px auto;
+    line-height:28px;
+}
+    .searchtxt {
+        height:18px;
+        line-height:18px;
+        width:180px;
+        padding:1px 3px;
+        border:1px solid #7F9DB9;
+    }
+.right_table table:first-child {
+    text-align:center;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.right_table table:first-child tr:first-child {
+    line-height:23px;
+    background-color:#DDEFF9;
+}
+.right_table table td {
+    line-height:25px;
+    border-color:#a9c5d0;    
+}
+    .right_table table td .paginator {
+        float:right;
+    }
+/*message.aspx end*/
